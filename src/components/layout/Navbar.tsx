@@ -42,9 +42,15 @@ export default function Navbar() {
       <div className="blvd-container">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <Coffee className="mr-2 text-blvd-gold" size={24} />
-            <span className="text-2xl font-display font-light text-blvd-charcoal">BLVD</span>
+          <Link to="/" className={cn(
+            "flex items-center transition-colors",
+            isScrolled ? "text-blvd-charcoal" : "text-white"
+          )}>
+            <Coffee className={cn(
+              "mr-2",
+              isScrolled ? "text-blvd-gold" : "text-white"
+            )} size={24} />
+            <span className="text-2xl font-display font-light">BLVD</span>
             <span className="ml-2 text-xs uppercase tracking-widest font-light">Coffee Co.</span>
           </Link>
 
@@ -54,7 +60,10 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-xs tracking-wider font-medium hover:text-blvd-gold transition-colors"
+                className={cn(
+                  "text-xs tracking-wider font-medium hover:text-blvd-gold transition-colors",
+                  isScrolled ? "text-blvd-charcoal" : "text-white"
+                )}
               >
                 {link.name}
               </Link>
@@ -68,7 +77,10 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="lg:hidden" onClick={toggleMobileMenu}>
+          <button className={cn(
+            "lg:hidden transition-colors",
+            isScrolled ? "text-blvd-charcoal" : "text-white"
+          )} onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </nav>
@@ -82,7 +94,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.path}
-                className="block py-2 text-sm tracking-wider hover:text-blvd-gold transition-colors"
+                className="block py-2 text-sm tracking-wider text-blvd-charcoal hover:text-blvd-gold transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
