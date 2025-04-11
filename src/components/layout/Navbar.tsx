@@ -31,6 +31,7 @@ export default function Navbar() {
     { name: 'MENU', path: '/menu' },
     { name: 'LOCATION', path: '/location' },
     { name: 'EVENTS', path: '/events' },
+    { name: 'RESERVE', path: '/reserve' },
     { name: 'CONTACT', path: '/contact' },
   ];
 

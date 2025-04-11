@@ -12,6 +12,7 @@ import LocationPage from "./pages/Location";
 import EventsPage from "./pages/Events";
 import ContactPage from "./pages/Contact";
 import OrderPage from "./pages/Order";
+import ReservePage from "./pages/Reserve";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/events" element={<EventsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/order" element={<OrderPage />} />
+          <Route path="/reserve" element={<ReservePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
