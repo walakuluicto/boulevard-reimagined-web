@@ -2,11 +2,11 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/home/HeroSection";
-import IntroSection from "@/components/home/IntroSection";
-import ServicesSection from "@/components/home/ServicesSection";
-import TestimonialsSection from "@/components/home/TestimonialsSection";
-import ProductsSection from "@/components/home/ProductsSection";
+import AboutSection from "@/components/home/AboutSection";
+import MenuSection from "@/components/home/MenuSection";
+import LocationSection from "@/components/home/LocationSection";
 import ContactSection from "@/components/home/ContactSection";
+import InstagramFeed from "@/components/home/InstagramFeed";
 
 const Index = () => {
   return (
@@ -14,10 +14,10 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <IntroSection />
-        <ServicesSection />
-        <TestimonialsSection />
-        <ProductsSection />
+        <AboutSection />
+        <MenuSection />
+        <LocationSection />
+        <InstagramFeed />
         <ContactSection />
       </main>
       <Footer />

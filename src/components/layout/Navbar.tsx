@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Coffee } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
@@ -28,9 +28,9 @@ export default function Navbar() {
   const navLinks = [
     { name: 'HOME', path: '/' },
     { name: 'ABOUT', path: '/about' },
-    { name: 'TREATMENTS', path: '/treatments' },
-    { name: 'SKIN CARE', path: '/skin-care' },
-    { name: 'SHOP', path: '/shop' },
+    { name: 'MENU', path: '/menu' },
+    { name: 'LOCATION', path: '/location' },
+    { name: 'EVENTS', path: '/events' },
     { name: 'CONTACT', path: '/contact' },
   ];
 
@@ -43,8 +43,9 @@ export default function Navbar() {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
+            <Coffee className="mr-2 text-blvd-gold" size={24} />
             <span className="text-2xl font-display font-light text-blvd-charcoal">BLVD</span>
-            <span className="ml-2 text-xs uppercase tracking-widest font-light">Skin Clinics</span>
+            <span className="ml-2 text-xs uppercase tracking-widest font-light">Coffee Co.</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -59,10 +60,10 @@ export default function Navbar() {
               </Link>
             ))}
             <Link 
-              to="/book" 
+              to="/order" 
               className="btn-primary"
             >
-              BOOK NOW
+              ORDER ONLINE
             </Link>
           </div>
 
@@ -88,11 +89,11 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              to="/book"
+              to="/order"
               className="block btn-primary w-full text-center mt-6"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              BOOK NOW
+              ORDER ONLINE
             </Link>
           </div>
         </div>

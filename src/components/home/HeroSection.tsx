@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div 
           className="h-full w-full bg-cover bg-center bg-no-repeat" 
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=2070&auto=format&fit=crop')`,
           }}
         ></div>
       </div>
@@ -17,19 +17,19 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 blvd-container">
         <div className="max-w-xl text-white">
-          <span className="inline-block mb-4 text-sm uppercase tracking-wide font-medium">Welcome to BLVD Skin Clinics</span>
+          <span className="inline-block mb-4 text-sm uppercase tracking-wide font-medium">Welcome to BLVD</span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-light mb-6">
-            Transform Your Skin's Natural Beauty
+            Specialty Coffee & Good Vibes
           </h1>
           <p className="text-lg mb-8 font-light">
-            Expert treatments and skin care solutions delivered by qualified therapists in a luxurious setting.
+            Artisanal coffee, freshly baked goods, and a welcoming atmosphere in the heart of the city.
           </p>
           <div className="flex space-x-4">
-            <Link to="/book" className="btn-primary">
-              BOOK NOW
+            <Link to="/menu" className="btn-primary">
+              OUR MENU
             </Link>
-            <Link to="/treatments" className="px-6 py-3 border border-white text-white text-sm uppercase tracking-wider font-medium transition-all hover:bg-white/20">
-              EXPLORE TREATMENTS
+            <Link to="/location" className="px-6 py-3 border border-white text-white text-sm uppercase tracking-wider font-medium transition-all hover:bg-white/20">
+              FIND US
             </Link>
           </div>
         </div>

@@ -1,5 +1,5 @@
 
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
 export default function ContactSection() {
   return (
@@ -10,8 +10,7 @@ export default function ContactSection() {
             <span className="inline-block text-blvd-gold text-sm uppercase tracking-wider mb-4">Get In Touch</span>
             <h2 className="font-display text-3xl md:text-4xl font-light mb-6">Contact Us</h2>
             <p className="text-blvd-charcoal/80 mb-8 leading-relaxed">
-              We're here to answer any questions you may have about our treatments or products. 
-              Reach out to our team for personalized advice or to book your consultation.
+              Have questions, suggestions, or interested in catering services? We'd love to hear from you! Reach out to our team through any of the channels below.
             </p>
             
             <div className="space-y-6 mb-8">
@@ -20,8 +19,8 @@ export default function ContactSection() {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">Visit Us</h4>
-                  <p className="text-blvd-charcoal/80 text-sm">123 Bourke Street, Melbourne VIC 3000</p>
+                  <h4 className="font-medium mb-1">Address</h4>
+                  <p className="text-blvd-charcoal/80 text-sm">123 Main Street, Melbourne VIC 3000</p>
                 </div>
               </div>
               
@@ -30,7 +29,7 @@ export default function ContactSection() {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">Call Us</h4>
+                  <h4 className="font-medium mb-1">Phone</h4>
                   <p className="text-blvd-charcoal/80 text-sm">+61 3 9123 4567</p>
                 </div>
               </div>
@@ -40,21 +39,9 @@ export default function ContactSection() {
                   <Mail size={20} />
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">Email Us</h4>
-                  <p className="text-blvd-charcoal/80 text-sm">contact@blvdskins.com.au</p>
+                  <h4 className="font-medium mb-1">Email</h4>
+                  <p className="text-blvd-charcoal/80 text-sm">hello@blvdcoffee.com.au</p>
                 </div>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-medium mb-4">Business Hours</h4>
-              <div className="grid grid-cols-2 gap-2 text-sm">
-                <div>Monday - Friday</div>
-                <div>9:00 AM - 7:00 PM</div>
-                <div>Saturday</div>
-                <div>9:00 AM - 5:00 PM</div>
-                <div>Sunday</div>
-                <div>10:00 AM - 4:00 PM</div>
               </div>
             </div>
           </div>
@@ -105,8 +92,9 @@ export default function ContactSection() {
               
               <button 
                 type="submit" 
-                className="btn-primary w-full"
+                className="btn-primary flex items-center justify-center w-full"
               >
+                <Send size={16} className="mr-2" />
                 SEND MESSAGE
               </button>
             </form>
