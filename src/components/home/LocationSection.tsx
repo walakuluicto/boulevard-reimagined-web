@@ -11,7 +11,7 @@ export default function LocationSection() {
             <span className="inline-block text-blvd-gold text-sm uppercase tracking-wider mb-4">Visit Us</span>
             <h2 className="font-display text-3xl md:text-4xl font-light mb-6">Our Location</h2>
             <p className="text-blvd-charcoal/80 mb-8 leading-relaxed">
-              Located in the heart of the city, BLVD is more than just a coffee shop — it's a community hub where people connect, work, and relax in a welcoming environment.
+              Located in the heart of the city, BLVD SPECIALTY COFFEE is more than just a coffee shop — it's a community hub where people connect, work, and relax in a welcoming environment.
             </p>
 
             <div className="space-y-6 mb-8">

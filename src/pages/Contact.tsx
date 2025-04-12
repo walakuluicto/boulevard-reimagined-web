@@ -2,7 +2,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageHeader from "@/components/shared/PageHeader";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, Bus, Car, Train } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -70,6 +70,34 @@ export default function ContactPage() {
                   </div>
                 </div>
                 
+                <h3 className="font-medium text-lg mb-4">Getting Here</h3>
+                
+                <div className="space-y-5 mb-8">
+                  <div className="flex items-center">
+                    <Car className="mr-3 text-blvd-gold" size={20} />
+                    <div>
+                      <h4 className="font-medium">By Car</h4>
+                      <p className="text-sm text-blvd-charcoal/80">Metered parking available on Main Street and in the Wilson Parking garage on Cross Street.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <Train className="mr-3 text-blvd-gold" size={20} />
+                    <div>
+                      <h4 className="font-medium">By Train</h4>
+                      <p className="text-sm text-blvd-charcoal/80">We're a 5-minute walk from Central Station. Take the north exit and head east.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <Bus className="mr-3 text-blvd-gold" size={20} />
+                    <div>
+                      <h4 className="font-medium">By Bus</h4>
+                      <p className="text-sm text-blvd-charcoal/80">Routes 301, 302, and 305 stop directly in front of our café.</p>
+                    </div>
+                  </div>
+                </div>
+                
                 <div>
                   <h3 className="font-medium text-lg mb-4">Inquiries</h3>
                   <div className="space-y-3 text-blvd-charcoal/80 text-sm">
@@ -133,6 +161,62 @@ export default function ContactPage() {
                     SEND MESSAGE
                   </button>
                 </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section className="section-padding bg-blvd-sand">
+          <div className="blvd-container">
+            <div className="mt-8">
+              <h2 className="font-display text-3xl font-light mb-8 text-center">Our Space</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                  <img 
+                    src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2070&auto=format&fit=crop" 
+                    alt="BLVD Coffee interior"
+                    className="w-full h-64 object-cover rounded-sm mb-4"
+                  />
+                  <h3 className="font-medium text-lg mb-2">Cozy Seating</h3>
+                  <p className="text-sm text-blvd-charcoal/80">
+                    Our café features comfortable seating arrangements for individuals and groups, perfect for working, studying, or catching up with friends.
+                  </p>
+                </div>
+                
+                <div>
+                  <img 
+                    src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2070&auto=format&fit=crop" 
+                    alt="BLVD Coffee barista station"
+                    className="w-full h-64 object-cover rounded-sm mb-4"
+                  />
+                  <h3 className="font-medium text-lg mb-2">Barista Bar</h3>
+                  <p className="text-sm text-blvd-charcoal/80">
+                    Watch our skilled baristas craft your perfect beverage at our custom-built coffee bar featuring state-of-the-art equipment.
+                  </p>
+                </div>
+                
+                <div>
+                  <img 
+                    src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop" 
+                    alt="BLVD Coffee outdoor seating"
+                    className="w-full h-64 object-cover rounded-sm mb-4"
+                  />
+                  <h3 className="font-medium text-lg mb-2">Outdoor Patio</h3>
+                  <p className="text-sm text-blvd-charcoal/80">
+                    Enjoy your coffee in the fresh air on our landscaped patio, a tranquil urban oasis perfect for sunny days.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-12 text-center">
+              <h3 className="font-display text-2xl font-light mb-6">Find Us</h3>
+              <div className="h-96 rounded-sm overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1595867818082-083862f3d630?q=80&w=2070&auto=format&fit=crop" 
+                  alt="Map showing BLVD Coffee location"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

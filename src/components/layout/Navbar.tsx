@@ -52,7 +52,7 @@ export default function Navbar() {
               isScrolled ? "text-blvd-gold" : "text-white"
             )} size={24} />
             <span className="text-2xl font-display font-light">BLVD</span>
-            <span className="ml-2 text-xs uppercase tracking-widest font-light">Coffee Co.</span>
+            <span className="ml-2 text-xs uppercase tracking-widest font-light">Specialty Coffee</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -69,12 +69,14 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link 
-              to="/order" 
+            <a 
+              href="https://blvdsc.square.site/" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="btn-primary"
             >
               ORDER ONLINE
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -101,13 +103,15 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/order"
+            <a
+              href="https://blvdsc.square.site/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block btn-primary w-full text-center mt-6"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               ORDER ONLINE
-            </Link>
+            </a>
           </div>
         </div>
       )}

@@ -13,7 +13,7 @@ export default function Footer() {
               <Link to="/" className="flex items-center">
                 <Coffee className="mr-2 text-blvd-gold" size={20} />
                 <span className="text-2xl font-display font-light">BLVD</span>
-                <span className="ml-2 text-xs uppercase tracking-widest font-light">Coffee Co.</span>
+                <span className="ml-2 text-xs uppercase tracking-widest font-light">Specialty Coffee</span>
               </Link>
             </div>
             <p className="text-sm text-gray-400 mb-6">
@@ -73,16 +73,21 @@ export default function Footer() {
               </li>
             </ul>
             <div className="mt-6">
-              <Link to="/order" className="btn-primary">
+              <a 
+                href="https://blvdsc.square.site/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-primary"
+              >
                 ORDER ONLINE
-              </Link>
+              </a>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-xs text-gray-500">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; 2025 BLVD Coffee Co. All rights reserved.</p>
+            <p>&copy; 2025 BLVD SPECIALTY COFFEE. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
               <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
