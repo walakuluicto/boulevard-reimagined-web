@@ -4,31 +4,31 @@ import { Link } from 'react-router-dom';
 const menuItems = [
   {
     id: 1,
-    name: "Signature Coffee",
+    name: "Coffee & Tea",
     description: "Our hand-selected beans are roasted to perfection and prepared using methods that bring out their unique flavors.",
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop",
     link: "/menu#coffee"
   },
   {
     id: 2,
-    name: "Artisan Pastries",
-    description: "Freshly baked daily in our kitchen, our pastries are the perfect companion to your morning coffee.",
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop",
-    link: "/menu#pastries"
+    name: "Other Beverages",
+    description: "Explore our range of specialty drinks, from freshly squeezed juices to milkshakes and smoothies.",
+    image: "https://images.unsplash.com/photo-1513267048331-5611cad62e41?q=80&w=2070&auto=format&fit=crop",
+    link: "/menu#beverages"
   },
   {
     id: 3,
-    name: "Breakfast & Lunch",
-    description: "From hearty breakfast options to delicious lunch selections, we offer nutritious meals made with locally sourced ingredients.",
+    name: "All Day Breakfast & Specialties",
+    description: "From hearty breakfast options to delicious specialties, we offer nutritious meals made with locally sourced ingredients.",
     image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=2080&auto=format&fit=crop",
-    link: "/menu#meals"
+    link: "/menu#breakfast"
   },
   {
     id: 4,
-    name: "Specialty Drinks",
-    description: "Explore our range of specialty beverages, from seasonal lattes to refreshing cold brews and tea options.",
+    name: "Kids & Seasonal",
+    description: "Special menu items for the little ones and seasonal specialties that change throughout the year.",
     image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=2069&auto=format&fit=crop",
-    link: "/menu#specialty"
+    link: "/menu#kids"
   },
 ];
 
