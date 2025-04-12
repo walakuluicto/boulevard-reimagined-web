@@ -17,7 +17,7 @@ export default function Footer() {
               </Link>
             </div>
             <p className="text-sm text-gray-400 mb-6">
-              Crafting exceptional coffee experiences since 2015. Our mission is to serve quality coffee in a welcoming space where community thrives.
+              Welcome to BLVD Specialty Coffee, a unique cafe offering specialty coffee blends and carefully crafted food for a memorable dining experience. Our welcoming atmosphere and commitment to quality makes us the perfect spot to enjoy exceptional coffee.
             </p>
             <div className="flex space-x-4">
               <a href="https://facebook.com/blvdcoffee" className="text-white hover:text-blvd-gold transition-colors">
@@ -48,9 +48,7 @@ export default function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link to="/about" className="hover:text-white transition-colors">Our Story</Link></li>
-              <li><Link to="/team" className="hover:text-white transition-colors">Our Team</Link></li>
               <li><Link to="/events" className="hover:text-white transition-colors">Events</Link></li>
-              <li><Link to="/careers" className="hover:text-white transition-colors">Careers</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>

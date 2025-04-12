@@ -40,7 +40,7 @@ export default function MenuSection() {
           <span className="inline-block text-blvd-gold text-sm uppercase tracking-wider mb-4">Our Menu</span>
           <h2 className="font-display text-3xl md:text-4xl font-light mb-6">Crafted With Care</h2>
           <p className="text-blvd-charcoal/80 leading-relaxed">
-            We take pride in every item we serve, from our specialty coffees to our house-made pastries and meals. Each creation reflects our commitment to quality and passion for great taste.
+            At BLVD, we believe that coffee is more than just a drink – it's an art form that requires care and attention to detail. Our menu also features a range of delicious food options designed to complement our coffee and provide a satisfying meal.
           </p>
         </div>
         
